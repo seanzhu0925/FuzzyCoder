@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+  <h:head>
+
+    <title>Student Page</title>
+
+    <!-- Bootstrap core CSS -->
+	<link href="/resources/css/bootstrap.min.css" rel="stylesheet"></link>
+	<link href="/resources/css/dashboard.css" rel="stylesheet"></link>
+
+ 
+    <!-- <h:outputStylesheet name="css/bootstrap.min.css" />
+    <h:outputStylesheet name="css/dashboard.css" />  -->
+	
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </h:head>
+
+  <h:body>
+	
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Wolfie Coder</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="../index.html">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <h:inputText type="text" class="form-control" placeholder="Search..."></h:inputText>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+          	<center>
+            <li><a href="#">CSE 101</a></li>
+            <li><a href="#">CSE 102</a></li>
+            <li><a href="#">CSE 114</a></li>
+            <li><a href="#">CSE 214</a></li>
+           </center> 
+          </ul>
+          
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">CSE 101</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+            <link value="Login Page" outcome="/student/student_announcement.xhtml"></link>
+              <a href="student_announcement.xhtml">
+              		<img src="../images/announcement.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
+              		</img>
+              		<h4>Announcement</h4>
+              </a>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <a href="student_discussion.xhtml">
+              		<img src="../images/discussion.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
+              		</img>
+              		<h4>Discussion</h4>
+              </a>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <a href="student_exams.xhtml">
+              		<img src="../images/exam.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
+              		</img>
+              		<h4>Exams</h4>
+              </a>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <a href="student_grades.xhtml">
+              		<img src="../images/grades.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
+              		</img>
+              		<h4>Grades</h4>
+              </a>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <script src="js/offcanvas.js"></script>
+  </h:body>
+</html>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>TA add exam</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+    <!-- bootstrap -->
+    <link href="/resources/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="/resources/css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+
+    <!-- libraries -->
+    <link href="/resources/css/lib/jquery-ui-1.10.2.custom.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/compiled/layout.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/compiled/elements.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/compiled/icons.css" />
+
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="/resources/css/compiled/index.css" type="text/css" media="screen" />
+
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+
+    <!-- lato font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</h:head>
+<h:body>
+    
+    <!-- header -->
+    <ui:include src="ta_header.xhtml" />
+
+
+	<!-- main container -->
+    <div class="content">
+        <div id="pad-wrapper">
+			<h2 class="head ">
+            	Add exam
+            </h2>             
+            <div class="pull-right">
+              <ul>
+            	<li class="announ-button"></li>
+              </ul>
+            </div>	
+        </div>
+
+        <div id="pad-wrapper" class="col-md-9 with-sidebar">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="testId" class="col-md-2 control-label">Test ID</label>
+                    <div class="col-md-8">
+                        <h:inputText type="text" class="form-control" id="testId" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="testName" class="col-md-2 control-label">Test Name</label>
+                    <div class="col-md-8">
+                        <h:inputText type="text" class="form-control" id="testName" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="type" class="col-md-2 control-label">Type</label>
+                    <div class="col-md-8">
+                        <h:selectOneMenu>
+                        	<f:selectItem itemValue="Quiz" />
+                        	<f:selectItem itemValue="Exam" />
+                        </h:selectOneMenu>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="startDate" class="col-md-2 control-label">Start Date</label>
+                    <div class="col-md-8">
+                        <h:inputText type="text" class="form-control" id="startDate" />
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="endDate" class="col-md-2 control-label">End Date</label>
+                    <div class="col-md-8">
+                        <h:inputText type="text" class="form-control" id="endDate" />
+						                   
+					</div>
+                </div>
+                <div class="form-group">
+                    <label for="duration" class="col-md-2 control-label">Duration</label>
+                    <div class="col-md-8">
+                        <h:inputText type="text" class="form-control" id="duration" />
+                    </div>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="duration" class="col-md-2 control-label">No. of question</label>
+                    <div class="col-md-8"><h:inputText class="form-control text-center" readonly="true" value="Leave blank or 0 below for not picking questions."/></div>
+                </div>
+                <div class="form-group">
+                    <label for="duration" class="col-md-2 control-label">Multiple choice</label>
+                    <div class="col-md-8">
+                      <h:selectOneMenu>
+                       	<f:selectItem itemValue="0" />
+                       	<f:selectItem itemValue="1" />
+                       	<f:selectItem itemValue="2" />
+                       	<f:selectItem itemValue="3" />
+                       	<f:selectItem itemValue="4" />
+                       	<f:selectItem itemValue="5" />
+                      </h:selectOneMenu>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="duration" class="col-md-2 control-label">Short answer</label>
+                    <div class="col-md-8">
+                      <h:selectOneMenu>
+                       	<f:selectItem itemValue="0" />
+                       	<f:selectItem itemValue="1" />
+                       	<f:selectItem itemValue="2" />
+                       	<f:selectItem itemValue="3" />
+                       	<f:selectItem itemValue="4" />
+                       	<f:selectItem itemValue="5" />
+                      </h:selectOneMenu>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="duration" class="col-md-2 control-label">Coding problem</label>
+                    <div class="col-md-8">
+                      <h:selectOneMenu>
+                       	<f:selectItem itemValue="0" />
+                       	<f:selectItem itemValue="1" />
+                       	<f:selectItem itemValue="2" />
+                       	<f:selectItem itemValue="3" />
+                       	<f:selectItem itemValue="4" />
+                       	<f:selectItem itemValue="5" />
+                      </h:selectOneMenu>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-8">
+                      <button type="submit" class="btn btn-glow">Submit</button>
+                      <a class="btn-glow primary" href="ta_exams.xhtml">Cancel</a>
+                    </div>
+                </div>
+            </form>
+		</div>
+    </div>
+	<!-- main container -->
+
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/resources/js/bootstrap.min.js"></script>
+    <script src="/resources/js/jquery-ui-1.10.2.custom.min.js"></script>
+    <!-- knob -->
+    <script src="/resources/js/jquery.knob.js"></script>
+    <!-- flot charts -->
+    <script src="/resources/js/jquery.flot.js"></script>
+    <script src="/resources/js/jquery.flot.stack.js"></script>
+    <script src="/resources/js/jquery.flot.resize.js"></script>
+    <script src="/resources/js/theme.js"></script>
+
+
+</h:body>
+</html>

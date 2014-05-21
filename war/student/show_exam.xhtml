@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <h:head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Exams</title>
+
+    <!-- Bootstrap core CSS -->
+<!--     <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+<!--     <link href="../css/dashboard.css" rel="stylesheet"> -->
+
+    <h:outputStylesheet name="../css/bootstrap.min.css" />
+    <!-- Custom styles for this template -->
+	<h:outputStylesheet name="../css/dashboard.css" />
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </h:head>
+
+  <h:body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Wolfie Coder</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="../index.html">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+          	<center>
+            <li><a href="#">question 1</a></li>
+            <li><a href="#">question 2</a></li>
+            <li><a href="#">question 3</a></li>
+            <li><a href="#">question 4</a></li>
+			<li><a href="#">question 5</a></li>
+			<li><a href="#">question 6</a></li>
+			<li><a href="#">question 7</a></li>
+			<li><a href="#">question 8</a></li>
+			<li><a href="#">question 9</a></li>
+			<li><a href="#">question 10</a></li>
+           </center> 
+          </ul>
+          
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <form id = "exam_tools_bar"style="float:right;">
+		  <button type="button" class="btn btn-lg btn-primary"  onClick="">Submit</button>
+		  <button type="button" class="btn btn-lg btn-primary"  onClick="">Help</button>
+		  <button type="button" class="btn btn-lg btn-primary"  onClick="">Freeze Time(3 min)</button>
+		  </form>
+          <h1 class="page-header">Exams</h1>
+
+          <div class="question_area">
+			<h3 id="questoin_header">Question 1:<h3>
+			<p>Who is the professor of CSE308?</p>
+			<br>
+			<form id="answer">
+				<input type="radio" name="multichoice_answer" value="Richard_McKenna">Richard McKenna<br>
+				<input type="radio" name="multichoice_answer" value="Paul_Fodor">Paul Fodor<br>
+				<input type="radio" name="multichoice_answer" value="Arie_E_Kaufman">Arie E. Kaufman<br>
+				<input type="radio" name="multichoice_answer" value="Leo_Bachmair">Leo Bachmair<br>
+				<br>
+				<button type="button" class="btn btn-lg btn-primary"  onClick="">Back</button>
+				<button type="button" class="btn btn-lg btn-primary"  onClick="">Mark</button>
+				<button type="button" class="btn btn-lg btn-primary"  onClick="">Next</button>
+			</form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <script>function goBack(){window.history.back()}</script>
+  </h:body>
+</html>

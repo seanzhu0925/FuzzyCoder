@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>TA Announcement</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+    <!-- bootstrap -->
+    <link href="/resources/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="/resources/css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+
+    <!-- libraries -->
+    <link href="/resources/css/lib/jquery-ui-1.10.2.custom.css" rel="stylesheet" type="text/css" />
+    <link href="/resources/css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/compiled/layout.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/compiled/elements.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/compiled/icons.css" />
+
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="/resources/css/compiled/index.css" type="text/css" media="screen" />
+
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+
+    <!-- lato font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</h:head>
+<h:body>
+    
+    <!-- header -->
+    <ui:include src="ta_header.xhtml" />
+
+
+	<!-- main container -->
+    <div class="content">
+        <div id="pad-wrapper" >
+			<h2>
+            	Announcement
+            </h2>             
+            <div class="pull-right">
+              <ul>
+            	<li class="announ-button"><a class="btn-glow success" href="add_announcement.xhtml">+ Add announcement</a></li>
+            	<li class="announ-button"><a class="btn-glow primary" href="ta_index.xhtml">Back</a></li>
+              </ul>
+            </div>	
+        </div>
+        
+        <div id="pad-wrapper">
+            
+        	<div class="row announ-blog">
+        		<h4>Final Exam</h4>
+				<p>Exam will be on 5/19th.</p>
+				<ul>
+				  <li class="list-unstyled">
+            		<a class="btn-glow success" href="edit_announcement.xhtml"><i class="icon-edit"></i>Edit</a>
+                    <a class="btn-glow success" href="#"><i class="icon-trash"></i>Delete</a>
+                  </li>  
+              	</ul>
+            </div>
+			<div class="row announ-blog">
+        		<h4>Final Exam</h4>
+				<p>Exam will be on 5/19th.</p>
+				<ul>
+              	  <li class="list-unstyled">
+            		<a class="btn-glow success" href="edit_announcement.xhtml"><i class="icon-edit"></i>Edit</a>
+                    <a class="btn-glow success" href="#"><i class="icon-trash"></i>Delete</a>
+                  </li> 
+              	</ul>
+            </div>
+            <div class="row announ-blog">
+        		<h4>Final Exam</h4>
+				<p>Exam will be on 5/19th.</p>
+				<ul>
+            	  <li class="list-unstyled">
+            		<a class="btn-glow success" href="edit_announcement.xhtml"><i class="icon-edit"></i>Edit</a>
+                    <a class="btn-glow success" href="#"><i class="icon-trash"></i>Delete</a>
+                  </li> 
+              	</ul>
+            </div>
+                
+        </div>
+        <!-- end products table -->
+    </div>
+	<!-- main container -->
+
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/resources/js/bootstrap.min.js"></script>
+    <script src="/resources/js/jquery-ui-1.10.2.custom.min.js"></script>
+    <!-- knob -->
+    <script src="/resources/js/jquery.knob.js"></script>
+    <!-- flot charts -->
+    <script src="/resources/js/jquery.flot.js"></script>
+    <script src="/resources/js/jquery.flot.stack.js"></script>
+    <script src="/resources/js/jquery.flot.resize.js"></script>
+    <script src="/resources/js/theme.js"></script>
+
+
+</h:body>
+</html>
