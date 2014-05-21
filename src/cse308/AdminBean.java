@@ -61,7 +61,6 @@ public class AdminBean implements Serializable  {
 	private String editCourseProfessor;
 	private String editCourseCapacity;
 	private String editCourseDescription;
-	private int c;
 	
 	public String addStudent() {
 		FacesContext context = FacesContext.getCurrentInstance();
