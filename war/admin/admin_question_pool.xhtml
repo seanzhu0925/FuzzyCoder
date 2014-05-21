@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://java.sun.com/jsf/passthrough">
+ <h:head>
+    <!-- Bootstrap core CSS -->
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="/resources/css/dashboard.css" rel="stylesheet"></link>
+
+    <title>Admin Question Pool Page</title>
+
+    <!-- Bootstrap core CSS -->
+<!--     <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+<!--     <link href="../css/dashboard.css" rel="stylesheet"> -->
+
+		<h:outputStylesheet name="../css/bootstrap.min.css" />
+    <!-- Custom styles for this template -->
+	<h:outputStylesheet name="../css/dashboard.css" />
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </h:head>
+
+  <h:body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.xhtml">Wolfie Coder</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../index.html">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <h:inputText type="text" class="form-control" p:autofocus="true"  placeholder="Search..."/>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12  col-md-12 main">
+        <form action="add_question.xhtml" style="float:right;" >
+          <button type="submit" class="btn btn-lg btn-primary">Add</button>
+          <button type="button" class="btn btn-lg btn-primary" onClick="goBack()">Back</button>
+		 </form>
+          <h1 class="page-header">Questions List</h1>
+		  
+          
+
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Question Id</th>
+                  <th>Type</th>
+                  <th>Time Required(min)</th>
+				  <th>Frequency</th>
+				  <th>Points</th>
+                  <th>Modify</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0010101</td>
+                  <td>Multiple Choice</td>
+                  <td>10</td>
+                  <td>2</td>
+				  <td>5.0</td>
+                  <td>
+                 	<button type="button" class="btn btn-xs btn-primary">Update</button>
+					<button type="button" class="btn btn-xs btn-primary">Remove</button>
+                  </td>
+                </tr>
+				<tr>
+                  <td>0010102</td>
+                  <td>Multiple Choice</td>
+                  <td>5</td>
+                  <td>0</td>
+				  <td>5.0</td>
+                  <td>
+                 	<button type="button" class="btn btn-xs btn-primary">Update</button>
+					<button type="button" class="btn btn-xs btn-primary">Remove</button>
+                  </td>
+                </tr>
+				<tr>
+                  <td>0010103</td>
+                  <td>Fill Blank</td>
+                  <td>10</td>
+                  <td>1</td>
+				  <td>10.0</td>
+                  <td>
+                 	<button type="button" class="btn btn-xs btn-primary">Update</button>
+					<button type="button" class="btn btn-xs btn-primary">Remove</button>
+                  </td>
+                </tr>
+				<tr>
+                  <td>0010104</td>
+                  <td>Coding</td>
+                  <td>20</td>
+                  <td>4</td>
+				  <td>20.0</td>
+                  <td>
+                 	<button type="button" class="btn btn-xs btn-primary">Update</button>
+					<button type="button" class="btn btn-xs btn-primary">Remove</button>
+                  </td>
+                </tr>
+                
+                
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <script>function goBack(){window.history.back()}</script>
+  </h:body>
+</html>

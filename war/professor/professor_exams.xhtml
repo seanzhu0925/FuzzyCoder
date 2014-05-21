@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+
+	<title>Professor Exams List</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+    <!-- bootstrap -->
+    <link href="/resources/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="/resources/css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/compiled/layout.css" />
+        <link rel="stylesheet" type="text/css" href="/resources/css/compiled/elements.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/compiled/icons.css" />
+
+    <!-- libraries -->
+    <link href="/resources/css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+    <link href="/resources/css/lib/jquery.dataTables.css" type="text/css" rel="stylesheet" />
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="/resources/css/compiled/datatables.css" type="text/css" media="screen" />
+
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</h:head>
+<h:body>
+
+    <!-- header -->
+    <ui:include src="professor_header.xhtml" />
+
+
+		<!-- main container -->
+    <div class="content">
+        <div id="pad-wrapper">
+			<h2 class="head">
+            	Exams List
+            </h2> 
+            <div class="pull-right">
+              <ul>
+            	<li class="announ-button"><a class="btn-glow success" href="add_problem.xhtml">+ Add problem</a></li>
+            	<li class="announ-button"><a class="btn-glow success" href="add_exam.xhtml">+ Add exam</a></li>
+            	<li class="announ-button"><a class="btn-glow primary" href="professor_index.xhtml">Back</a></li>
+              </ul>
+            </div>	
+        </div>
+        
+        <div id="pad-wrapper" class="datatables-page">
+            
+            <div class="row">
+                <div class="col-md-12">
+
+                    <table id="example">
+                        <thead>
+                            <tr>
+                                <th tabindex="0" rowspan="1" colspan="1">Test ID
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Test Name
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Type
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Start Data
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">End Data
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Duration
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Modify
+                                </th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th tabindex="0" rowspan="1" colspan="1">Test ID
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Test Name
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Type
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Start Data
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">End Data
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Duration
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Modify
+                                </th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Quiz 2</td>
+                                <td>Quiz</td>
+                                <td class="center"> 4/5</td>
+                                <td class="center"> 5/5</td>
+                                <td class="center">12 mins</td>
+                                <td class="center">
+                                	<a class="btn-glow success" href="edit_exam.xhtml"><i class="icon-edit"></i>Edit</a>
+                                	<a class="btn-glow success" href="#"><i class="icon-trash"></i>Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Midterm 1</td>
+                                <td>Exam</td>
+                                <td class="center"> 4/5</td>
+                                <td class="center"> 5/5</td>
+                                <td class="center">40 mins</td>
+                                <td class="center">
+                                	<a class="btn-glow success" href="edit_exam.xhtml"><i class="icon-edit"></i>Edit</a>
+                                	<a class="btn-glow success" href="#"><i class="icon-trash"></i>Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>Midterm 2</td>
+                                <td>Exam</td>
+                                <td class="center"> 4/5</td>
+                                <td class="center"> 5/5</td>
+                                <td class="center">60 mins</td>
+                                <td class="center">
+                                	<a class="btn-glow success" href="edit_exam.xhtml"><i class="icon-edit"></i>Edit</a>
+                                	<a class="btn-glow success" href="#"><i class="icon-trash"></i>Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>Quiz 2</td>
+                                <td>Quiz</td>
+                                <td class="center"> 4/5</td>
+                                <td class="center"> 5/5</td>
+                                <td class="center">15 mins</td>
+                                <td class="center">
+                                	<a class="btn-glow success" href="edit_exam.xhtml"><i class="icon-edit"></i>Edit</a>
+                                	<a class="btn-glow success" href="#"><i class="icon-trash"></i>Delete</a>
+                                </td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end main container -->
+
+	<!-- scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/resources/js/bootstrap.min.js"></script>
+    <script src="/resources/js/jquery.dataTables.js"></script>
+    <script src="/resources/js/theme.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#example').dataTable({
+                "sPaginationType": "full_numbers"
+            });
+        });
+    </script>
+</h:body>
+</html>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+ <h:head>
+    <!-- Bootstrap core CSS -->
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="/resources/css/dashboard.css" rel="stylesheet"></link>
+
+    <title>Professor Add Problem</title>
+
+  </h:head>
+
+  <h:body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.xhtml">Wolfie Coder</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../index.xhtml">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <h:inputText type="text" class="form-control" placeholder="Search..."/>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+          	<center>
+            <li><a href="#">CSE 101</a></li>
+            <li><a href="#">CSE 102</a></li>
+            <li><a href="#">CSE 114</a></li>
+            <li><a href="#">CSE 214</a></li>
+           </center> 
+          </ul>
+          
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <form action="add_exam.xhtml" style="float:right;" >
+            <button type="submit" class="btn btn-lg btn-primary" >Back</button>
+		  </form>
+          <h1 class="page-header">Add MultiChoice to Database</h1>
+		  <h:form>
+          <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>Title: </td>
+                  <td><h:inputText name="title" value="#{prof.title}"></h:inputText></td>
+                </tr>
+                <tr>
+                  <td>Choice A: </td>
+                  <td><h:inputText name="choiceA" value="#{prof.contentA}"></h:inputText></td>
+                </tr>
+                <tr>
+                  <td>Choice B: </td>
+                  <td><h:inputText name="choiceB" value="#{prof.contentB}"></h:inputText></td>
+                </tr>
+                <tr>
+                  <td>Choice C: </td>
+                  <td><h:inputText name="choiceC" value="#{prof.contentC}"></h:inputText></td>
+                </tr>
+                <tr>
+                  <td>Choice D: </td>
+                  <td><h:inputText name="choiceD" value="#{prof.contentD}"></h:inputText></td>
+                </tr>
+                <tr>
+                  <td>Choice E: </td>
+                  <td><h:inputText name="choiceE" value="#{prof.contentE}"></h:inputText></td>
+                </tr>
+                <tr>
+                  <td>Answer: </td>
+                  <td><h:inputText name="answer" value="#{prof.answer}"></h:inputText></td>
+                </tr>
+                <tr>
+                  <td>Score: </td>
+                  <td><h:inputText name="score" value="#{prof.score}"></h:inputText></td>
+                </tr>
+                <tr>
+                  <td>
+                  </td>
+                  <td>
+                  	 <h:commandButton value="Submit" action="#{prof.addQuestion}"/>
+                  	 <h:commandButton value="Back" action="index"/>
+                  </td>
+                </tr>  
+              </tbody>
+            </table>
+          </h:form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+  </h:body>
+</html>

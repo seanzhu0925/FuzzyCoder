@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+ <h:head>
+    <!-- Bootstrap core CSS -->
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="/resources/css/dashboard.css" rel="stylesheet"></link>
+    
+    <title>Professor Discussion Page</title>
+
+  </h:head>
+
+  <h:body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="professor_index.xhtml">Wolfie Coder</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../index.xhtml">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <h:inputText type="text" class="form-control" placeholder="Search..."/>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+          	<center>
+            <li><a href="#">CSE 101</a></li>
+            <li><a href="#">CSE 102</a></li>
+            <li><a href="#">CSE 114</a></li>
+            <li><a href="#">CSE 214</a></li>
+           </center> 
+          </ul>
+          
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		   <form action="add_discussion.xhtml" style="float:right;" >
+            <button type="submit" class="btn btn-lg btn-primary">Add</button>
+            <button type="button" class="btn btn-lg btn-primary" onClick="goBack()">Back</button>
+		   </form>          <h1 class="page-header">Discussion Board</h1>
+
+          <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          
+          <div class="row">
+            <div class="col-6 col-sm-6 col-lg-4">
+              <h2>Question 1</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="col-6 col-sm-6 col-lg-4">
+              <h2>Question 2</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="col-6 col-sm-6 col-lg-4">
+              <h2>Question 3</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="col-6 col-sm-6 col-lg-4">
+              <h2>Question 4</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+            <label>Top 10 questions</label>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr/>
+
+          
+      </div>
+     </div>
+	</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/docs.min.js"></script>
+    <script>function goBack(){window.open("professor_index.xhtml","_self")}</script>
+  </h:body>
+</html>

@@ -1,0 +1,96 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets">
+    <!-- navbar -->
+    <header class="navbar navbar-inverse" role="banner">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="admin_index.xhtml">
+                <img src="/resources/img/logo.png" alt="FuzzyCoder" />
+            </a>
+        </div>
+        <ul class="nav navbar-nav pull-right hidden-xs">
+            <li class="hidden-xs hidden-sm">
+                <h:inputText class="search" type="text" />
+            </li>
+            
+            <li class="settings hidden-xs hidden-sm">
+                <a href="../index.xhtml" role="button">
+                    <i class="icon-share-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div id="sidebar-nav">
+        <ul id="dashboard-menu">
+            <li class="active">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="/admin/admin_index.xhtml">
+                    <i class="icon-home"></i>
+                    <span>Home</span>
+                </a>
+            </li> 
+            <li>
+                <a class="dropdown-toggle" href="#">
+                    <i class="icon-book"></i>
+                    <span>Courses</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="/admin/admin_courses.xhtml">Courses List</a></li>
+                    <li><a href="/admin/add_course.xhtml">Add Course</a></li>
+                </ul>
+            </li>           
+            
+            <li>
+                <a class="dropdown-toggle" href="#">
+                    <i class="icon-user-md"></i>
+                    <span>Professor</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="/admin/admin_professors.xhtml">Professors list</a></li>
+                    <li><a href="/admin/add_professor.xhtml">Add new professor</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="dropdown-toggle" href="#">
+                    <i class="icon-group"></i>
+                    <span>Student</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="/admin/admin_students.xhtml">Students list</a></li>
+                    <li><a href="/admin/add_student.xhtml">Add new student</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="dropdown-toggle" href="#">
+                    <i class="icon-user"></i>
+                    <span>Ta</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="/admin/admin_tas.xhtml">Ta list</a></li>
+                    <li><a href="/admin/add_ta.xhtml">Add new Ta</a></li>
+                </ul>
+            </li>
+            
+            
+        </ul>
+    </div>
+    <!-- end sidebar -->
+</ui:composition>
