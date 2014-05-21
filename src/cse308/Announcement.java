@@ -6,7 +6,7 @@ public class Announcement {
 	public String announcement_content;
 	public String announcement_course;
 	public String announcement_date;
-	
+	public String hi;
 	public Announcement(int id, String name, String content, String course){
 		announcement_id = id;
 		announcement_name = name;
